@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blazor.TechRadar", "Blazor.TechRadar\Blazor.TechRadar.csproj", "{1497CFE0-13A9-45AB-AA90-94CDFE737A3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{838B57F1-E67A-49B7-BB03-78C28CEF72BA}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		.gitignore = .gitignore
+		.dockerignore = .dockerignore
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1497CFE0-13A9-45AB-AA90-94CDFE737A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1497CFE0-13A9-45AB-AA90-94CDFE737A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1497CFE0-13A9-45AB-AA90-94CDFE737A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1497CFE0-13A9-45AB-AA90-94CDFE737A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

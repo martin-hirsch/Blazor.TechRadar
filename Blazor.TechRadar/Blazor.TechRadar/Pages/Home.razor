@@ -1,0 +1,40 @@
+﻿@page "/"
+@using Blazor.TechRadar.Components
+
+<PageTitle>Tech Radar</PageTitle>
+
+<TechRadar
+    Title=".NET Demo"
+    Repository="@(new Uri("https://github.com/martin-hirsch"))"
+    Date="@DateTime.Now"
+    Quadrants="@Quadrants"
+/>
+
+@code
+
+{
+    private List<Quadrant> Quadrants { get; } =
+    [
+        new("Frameworks and Technologies",
+        [
+            new Entry("Blazor Server", Ring.Adopt, Moved.NoChange),
+            new Entry("Blazor WebAssembly", Ring.Trial, Moved.New),
+            new Entry(".NET Framework", Ring.Hold, Moved.NoChange),
+            new Entry("Telerik", Ring.Trial, Moved.NoChange)
+        ]),
+        new("Testing and Quality Tools",
+        [
+            new Entry("xUnit", Ring.Adopt, Moved.NoChange),
+            new Entry("FluentAssertions", Ring.Adopt, Moved.NoChange)
+        ]),
+        new("API and Backend Technologies",
+        [
+            new Entry("NSwag", Ring.Trial, Moved.NoChange),
+            new Entry("AutoMapper", Ring.Hold, Moved.Down)
+        ]),
+        new("Tools and DevOps",
+        [
+            new Entry("Azure DevOps", Ring.Adopt, Moved.NoChange)
+        ])
+    ];
+}

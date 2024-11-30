@@ -1,0 +1,8 @@
+﻿services:
+  blazor.tech.radar:
+    container_name: 'blazor-tech-radar'
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5123:80"
